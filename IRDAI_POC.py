@@ -4,12 +4,25 @@ import random
 from PIL import Image
 
 
-im = Image.open(r'Iimg.png')
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
+
+
+
+
+im = Image.open(r'Iimg.png')
 st.set_page_config(
         page_title="IL-IRDAI POC",
-        page_icon = im,
-)
+        page_icon = im,)
+
+
+
 
 
 st.header('Third Party Insurance Check and Challan System')
