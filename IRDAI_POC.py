@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import random
 from PIL import Image
+from streamlit.components.v1 import html
 
 
 
