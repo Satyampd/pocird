@@ -20,6 +20,7 @@ hide_menu_style = """
         css-pxxe24 {visibility: hidden;}
         #MainMenu {visibility: hidden; }
         footer {visibility: hidden;}
+        header {visibility: hidden;}
         </style>
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
