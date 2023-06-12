@@ -53,10 +53,10 @@ if tech_type == 'Using FastTag':
 
             else:
                 
-                col4= st.columns(3)
-                col4[1].button('Allot TP Insurance', on_click=set_stage, args=(3,))
-                if st.session_state.stage > 2:
-                    st.subheader(f'VRN -{vrn} has been alloted Third Party Insurance worth Rs { file1["TP Charges"].values[0]} and Penalty of Rs 500')
+#                 col4= st.columns(3)
+#                 col4[1].button('Allot TP Insurance', on_click=set_stage, args=(3,))
+#                 if st.session_state.stage > 2:
+                  st.subheader(f'VRN -{vrn} has been alloted Third Party Insurance worth Rs { file1["TP Charges"].values[0]} and Penalty of Rs 500')
 
 
 if tech_type == 'Using Computer Vision':
@@ -106,10 +106,10 @@ if tech_type == 'Using Computer Vision':
 
             else:
                 
-                col4= st.columns(3)
-                col4[1].button('Allot TP Insurance', on_click=set_stage, args=(3,))
-                if st.session_state.stage > 2:
-                    st.subheader(f'VRN -{vrn} has been alloted Third Party Insurance worth Rs { file1["TP Charges"].values[0]} and Penalty of Rs 500')
+#                 col4= st.columns(3)
+#                 col4[1].button('Allot TP Insurance', on_click=set_stage, args=(3,))
+#                 if st.session_state.stage > 2:
+                  st.subheader(f'VRN -{vrn} has been alloted Third Party Insurance worth Rs { file1["TP Charges"].values[0]} and Penalty of Rs 500')
 
 
 
