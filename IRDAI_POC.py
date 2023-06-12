@@ -8,7 +8,7 @@ im_logo = Image.open(r'icici_logo.png')
 
 st.set_page_config(
         page_title="IL-IRDAI POC",
-        page_icon = im,
+        page_icon = im_logo,
 )
 
 
