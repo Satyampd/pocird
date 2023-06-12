@@ -4,11 +4,11 @@ import random
 from PIL import Image
 
 
-im_logo = Image.open(r'icici_logo.png')
+im = Image.open(r'Iimg.png')
 
 st.set_page_config(
         page_title="IL-IRDAI POC",
-        page_icon = im_logo,
+        page_icon = im,
 )
 
 
