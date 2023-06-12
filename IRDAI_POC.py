@@ -5,13 +5,11 @@ from PIL import Image
 from streamlit.components.v1 import html
 
 
-
-
-
-
-
-
-im = Image.open(r'Iimg.png')
+im= Image.open(r'Iimg.png')
+st.set_page_config(
+        page_title="IL BIU-UW Pricing",
+        page_icon = im,
+)
 
 
 
