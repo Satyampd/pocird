@@ -4,15 +4,18 @@ import random
 from PIL import Image
 
 
+im_logo = Image.open(r'icici_logo.png')
+
+st.set_page_config(
+        page_title="IL-IRDAI POC",
+        page_icon = im,
+)
 
 
+st.header('Third Party Insurance Check and Challan System')
+tech_type = st.selectbox('Select Type' , ('Using FastTag' , 'using Computer Vision'))
 
-
-
-st.header('Third Party Insurance Check and Allot System')
-tech_type = st.selectbox('Select Type' , ('FastTag' , 'Computer Vision'))
-
-if tech_type == 'FastTag':
+if tech_type == 'Using FastTag':
     file = pd.read_excel('SampleFastTagData.xlsx' , sheet_name='FastTag')
 
     if 'stage' not in st.session_state:
@@ -56,7 +59,7 @@ if tech_type == 'FastTag':
                     st.subheader(f'VRN -{vrn} has been alloted Third Party Insurance worth Rs { file1["TP Charges"].values[0]} and Penalty of Rs 500')
 
 
-if tech_type == 'Computer Vision':
+if tech_type == 'Using Computer Vision':
     
     file = pd.read_excel('SampleFastTagData.xlsx' , sheet_name='NonFastTag')
     if 'stage' not in st.session_state:
