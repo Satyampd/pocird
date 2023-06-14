@@ -70,7 +70,7 @@ if tech_type == 'Using FASTag':
 #                 col4[1].button('Allot TP Insurance', on_click=set_stage, args=(3,))
 #                 if st.session_state.stage > 2:
                   st.subheader(f'VRN -{vrn} has been alloted Third Party Insurance worth Rs { file1["TP Charges"].values[0]} and Penalty of Rs 500')
-                  st.info('Disclaimer: All Vehicle No, Insurance Company, Panelty, TP Insurance Price are only sample value, they might not be real.')
+                  st.info('Disclaimer: All Vehicle No, Insurance Company, Panelty, TP Insurance Price are only sample values, they might not be real.')
 
 
 if tech_type == 'Using Computer Vision':
@@ -124,7 +124,7 @@ if tech_type == 'Using Computer Vision':
 #                 col4[1].button('Allot TP Insurance', on_click=set_stage, args=(3,))
 #                 if st.session_state.stage > 2:
                   st.subheader(f'VRN -{vrn} has been alloted Third Party Insurance worth Rs { file1["TP Charges"].values[0]} and Penalty of Rs 500')
-                  st.info('Disclaimer: All Vehicle No, Insurance Company, Panelty, TP Insurance Price are only sample value, they might not be real.')
+                  st.info('Disclaimer: All Vehicle No, Insurance Company, Panelty, TP Insurance Price are only sample values, they might not be real.')
 
 
 
