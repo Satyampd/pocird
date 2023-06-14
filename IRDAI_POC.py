@@ -26,9 +26,9 @@ st.markdown(hide_menu_style, unsafe_allow_html=True)
 
 
 st.header('Third Party Insurance Check and Challan System')
-tech_type = st.selectbox('Select Type' , ('Using FastTag' , 'Using Computer Vision'))
+tech_type = st.selectbox('Select Type' , ('Using FASTag' , 'Using Computer Vision'))
 
-if tech_type == 'Using FastTag':
+if tech_type == 'Using FASTag':
     file = pd.read_excel('SampleFastTagData.xlsx' , sheet_name='FastTag')
 
     if 'stage' not in st.session_state:
