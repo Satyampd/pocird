@@ -2,3 +2,4 @@ openpyxl
 pandas
 streamlit
 inotify
+streamlit_image_select
